@@ -1,0 +1,17 @@
+﻿global using USTB.Login.FromConsole.Modules;
+global using System.Text;
+global using System.Text.Json;
+global using System.Text.RegularExpressions;
+global using USTB.Login.FromConsole.Entities;
+global using USTB.Login.FromConsole.Extensions;
+global using System.Text.Json.Serialization;
+global using System.Net;
+global using System.Net.NetworkInformation;
+global using System.Web;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Hosting;
+global using Serilog;
+global using USTB.Login.FromConsole.Configurations;
+global using USTB.Login.FromConsole.Interfaces;
+global using USTB.Login.FromConsole.ScheduledServices;
