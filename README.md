@@ -24,6 +24,10 @@
 }
 ```
 
+## 运行环境
+
+* [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+
 ## 启动参数
 
 * `-c appsettings.json 文件路径`：可选参数，参数不提供时，程序将从同级目录寻找此配置文件。
