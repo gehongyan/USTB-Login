@@ -45,7 +45,7 @@ WinSW 配置文件 `WinSW.xml` 样例：
     <id>USTBAutoLogin</id>
     <name>USTB Auto Login</name>
     <description>USTB 校园网自动登录</description>
-    <executable>USTB.Login.FromConsole.exe</executable>
+    <executable>ustb-autologin-console-win-x64.exe</executable>
     <arguments></arguments>
     <onfailure action="restart" delay="30 sec"/>
     <onfailure action="restart" delay="120 sec"/>
@@ -65,7 +65,7 @@ Description=USTB Auto Login
 
 [Service]
 Type=notify
-ExecStart=/usr/ustb-login/USTB.Login.FromConsole -c /usr/ustb-login/appsettings.json
+ExecStart=/usr/ustb-login/ustb-autologin-console-linux-x64 -c /usr/ustb-login/appsettings.json
 
 [Install]
 WantedBy=multi-user.target
