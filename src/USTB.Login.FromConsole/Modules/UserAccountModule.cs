@@ -15,13 +15,13 @@ public class UserAccountModule
     /// <summary>
     ///     登录
     /// </summary>
-    /// <param name="studentNumber">学号</param>
+    /// <param name="userID">登录名</param>
     /// <param name="password">密码</param>
     /// <returns>
     ///     是否登陆成功、提示信息、登录响应结果
     /// </returns>
     public async Task<(bool? IsLoginSuccess, string Message, IUserLoginResponse? UserLoginResponse)> Login(
-        string studentNumber, string password)
+        string userID, string password)
     {
         try
         {
@@ -29,7 +29,7 @@ public class UserAccountModule
             List<KeyValuePair<string, string>> queryParams = new()
             {
                 new KeyValuePair<string, string>("callback", "dr1004"),
-                new KeyValuePair<string, string>("DDDDD", studentNumber),
+                new KeyValuePair<string, string>("DDDDD", userID),
                 new KeyValuePair<string, string>("upass", password),
                 new KeyValuePair<string, string>("0MKKey", "123456"),
                 new KeyValuePair<string, string>("R1", "0"),
